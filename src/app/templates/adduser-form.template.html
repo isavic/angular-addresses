@@ -1,0 +1,92 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 userform">
+      <form #user="ngForm" (ngSubmit)="onSubmit(user)" novalidate>
+      	<div class="form-group">
+      	  <label for="name">Name</label>
+            <input name="name" 
+      	      ngModel 
+      	      required
+      	      id="name" 
+      	      type="text" 
+      	      class="form-control"
+      	      #user.name="ngModel"
+              [(ngModel)]="user.name">
+      	</div>
+
+      	<div class="form-group">
+            <label for="username">Username</label>
+            <input name="username"
+            	  ngModel 
+      	      required
+      	      id="username" 
+      	      type="text" 
+      	      class="form-control"
+      	      #user.username="ngModel"
+              [(ngModel)]="user.username">
+      	</div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input name="address"
+                ngModel 
+              required
+              id="address" 
+              type="text" 
+              class="form-control"
+              #user.address="ngModel"
+              [(ngModel)]="user.address">
+        </div>
+
+      	<div class="form-group">
+            <label for="city">City</label>
+            <input name="city"
+            	  ngModel 
+      	      required
+      	      id="city" 
+      	      type="text" 
+      	      class="form-control"
+      	      #user.city="ngModel"
+              [(ngModel)]="user.city">
+      	</div>
+
+      	<div class="form-group">
+      	  <button class="btn btn-primary" type="submit">Submit</button>
+      	 </div>
+      </form>
+    </div>
+
+
+    <div class="col-md-12">
+      <table class="table table-responsive table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Adress</th>
+            <th>City</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.city}}</td>
+          </tr>
+          <tr>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.city}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p>Form value: {{ user.value | json }}</p>
+
+    </div>
+  </div>
+</div>

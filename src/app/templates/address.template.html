@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+    	<h1>{{header}}</h1>
+
+      <table class="table table-responsive table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Adress</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.city}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="error" *ngIf="errorMessage">{{errorMessage}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+[
+    {"name": "Clark Kent", "username": "superman", "address": "344 Clinton St., Apt. 3B", "city": "Metropolis"},
+    {"name": "SpongeBob SquarePants", "username": "squarepants", "address": "124 Conch Street, Bikini Bottom", "city": "Pacific Ocean"},
+    {"name": "Sirius Black","username": "sblack", "address": "12 Grimmauld Place", "city": "London"},
+    {"name": "Fox Mulder", "username": "fmulder", "address": "2630 Hegal Place, Apt. 42", "city": "Alexandria"},
+    {"name": "Buffy Summers", "username": "buffy", "address": "1630 Revello Drive", "city": "Sunnydale"},
+    {"name": "Sherlock Holmes", "username": "sherlock", "address": "221B Baker Street", "city": "London"},
+    {"name": "Sheldon Cooper", "username": "scooper", "address": "2311N, Los Robles Avenue", "city": "Pasadena"}
+]

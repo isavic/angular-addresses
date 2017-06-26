@@ -1,0 +1,60 @@
+$navbar-default-link-hover-bg: #ddd;
+$navbar-default-link-active-color: #ddd;
+$form-bg-color: #f8f8f8;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+h1 {
+	color: #F99F1F;
+}
+
+.userform {
+  margin: 3rem 1rem;
+  padding: 1.5rem;
+  background-color: $form-bg-color;
+   @include border-radius(5px);
+
+}
+
+.navbar {
+ 	min-height: 90px;
+  font-size: 2rem;
+
+  .navbar-nav > li > a {
+    &:hover {
+    background-color: $navbar-default-link-hover-bg;
+    }
+    &.active, &.active:hover {
+      background-color: $navbar-default-link-active-color;
+
+    }
+  }
+}
+
+ @media (max-width: 768px) {
+  .container-fluid > .navbar-header {
+    min-height: 90px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+ }
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+h1 {
+  color: #F99F1F; }
+
+.userform {
+  margin: 3rem 1rem;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.navbar {
+  min-height: 90px;
+  font-size: 2rem; }
+  .navbar .navbar-nav > li > a:hover {
+    background-color: #ddd; }
+  .navbar .navbar-nav > li > a.active, .navbar .navbar-nav > li > a.active:hover {
+    background-color: #ddd; }
+
+@media (max-width: 768px) {
+  .container-fluid > .navbar-header {
+    min-height: 90px; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; } }
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 34px;
+    padding-bottom: 34px; } }
